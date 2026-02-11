@@ -54,6 +54,9 @@ importers:
       shadcn:
         specifier: ^3.8.4
         version: 3.8.4(@types/node@20.19.33)(typescript@5.9.3)
+      slowmo:
+        specifier: ^0.16.2
+        version: 0.16.2(react@19.2.3)
       tailwindcss:
         specifier: ^4
         version: 4.1.18
@@ -2134,8 +2137,8 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  msw@2.12.9:
-    resolution: {integrity: sha512-NYbi51C6M3dujGmcmuGemu68jy12KqQPoVWGeroKToLGsBgrwG5ErM8WctoIIg49/EV49SEvYM9WSqO4G7kNeQ==}
+  msw@2.12.10:
+    resolution: {integrity: sha512-G3VUymSE0/iegFnuipujpwyTM2GuZAKXNeerUSrG2+Eg391wW63xFs5ixWsK9MWzr1AGoSkYGmyAzNgbR3+urw==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -2487,6 +2490,18 @@ packages:
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
+
+  slowmo@0.16.2:
+    resolution: {integrity: sha512-K4IrRFz3VI4cAAn6ZHe4qmlR+rSV0csDxS0qx3uZz3G1x3WH/K/erDdSrpWJO777+GybFIDU5gRuMK3r9/UODg==}
+    hasBin: true
+    peerDependencies:
+      gsap: '>=3.0.0'
+      react: '>=16.8.0'
+    peerDependenciesMeta:
+      gsap:
+        optional: true
+      react:
+        optional: true
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -4728,7 +4743,7 @@ snapshots:
 
   ms@2.1.3: {}
 
-  msw@2.12.9(@types/node@20.19.33)(typescript@5.9.3):
+  msw@2.12.10(@types/node@20.19.33)(typescript@5.9.3):
     dependencies:
       '@inquirer/confirm': 5.1.21(@types/node@20.19.33)
       '@mswjs/interceptors': 0.41.2
@@ -5125,7 +5140,7 @@ snapshots:
       fuzzysort: 3.1.0
       https-proxy-agent: 7.0.6
       kleur: 4.1.5
-      msw: 2.12.9(@types/node@20.19.33)(typescript@5.9.3)
+      msw: 2.12.10(@types/node@20.19.33)(typescript@5.9.3)
       node-fetch: 3.3.2
       open: 11.0.0
       ora: 8.2.0
@@ -5218,6 +5233,10 @@ snapshots:
   signal-exit@4.1.0: {}
 
   sisteransi@1.0.5: {}
+
+  slowmo@0.16.2(react@19.2.3):
+    optionalDependencies:
+      react: 19.2.3
 
   source-map-js@1.2.1: {}
 
